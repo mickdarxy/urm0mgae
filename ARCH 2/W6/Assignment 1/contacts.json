@@ -1,0 +1,32 @@
+{"contacts":  [
+  {
+    "id": 1,
+    "Firstname": "Danny",
+    "Lastname": "de Snoo",
+    "Emails": [
+      {"email":  "dannydesnoo1@outlook.com"},
+      {"email":  "dannydesnoo01@outlook.com"},
+      {"email":  "danny.desnoo@outlook.com"},
+      {"email":  "danny.desnoo@ddesnoo.nl"},
+      {"email":  "danny.desnoo@oakstrong.nl"}
+    ],
+    "Phonenumbers": [
+      {"phonenumber":  "0625175078"}
+    ]
+  },
+  {
+    "id": 2,
+    "Firstname": "Danny",
+    "Lastname": "de Snoo",
+    "Emails": [
+      {"email":  "dannydesnoo1@outlook.com"},
+      {"email":  "dannydesnoo01@outlook.com"},
+      {"email":  "danny.desnoo@outlook.com"},
+      {"email":  "danny.desnoo@ddesnoo.nl"},
+      {"email":  "danny.desnoo@oakstrong.nl"}
+    ],
+    "Phonenumbers": [
+      {"phonenumber":  "0625175078"}
+    ]
+  }
+]}
