@@ -172,13 +172,13 @@ def main(json_file):
     user_input = input("Select any of the options above:\t")
     if user_input == "L":
         print("-----List contacts-----")
-        list_contacts()
+        list_contacts(addressbook)
     elif user_input == "A":
         print("-----Add contact-----")
         add_contact()
     elif user_input == "R":
         print("-----Remove contact-----")
-        remove_contact()
+        remove_contact(addressbook)
     elif user_input == "M":
         print("-----Merge contacts-----")
         merge_contacts()

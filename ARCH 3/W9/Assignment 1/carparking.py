@@ -43,10 +43,10 @@ def main():
     machine = CarParkingMachine( capacity=10, hourly_rate= 2.5)
 
     while True:
-        option = input("Choose an option: ").upper()
         print("[I] Check-in car by license plate")
         print("[O] Check-out car by license plate")
         print("[Q] Quit program")
+        option = input("Choose an option: ").upper()
 
         if option == 'I' or option == 'i':
             license_plate = input("Enter license plate: ")
