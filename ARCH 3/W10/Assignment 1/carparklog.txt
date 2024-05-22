@@ -1,0 +1,2 @@
+22-05-2024 18:53:16;cpm_name=1;license_plate=96-XN-FP;action=check-in
+22-05-2024 18:54:26;cpm_name=1;license_plate=96-XN-FP;action=check-out;parking_fee=2

@@ -4,6 +4,7 @@ import json
 
 with open('contacts.json') as json_file:
     data = json.load(json_file)
+    print(data)
 '''
 print all contacts in the following format:
 ======================================
@@ -21,9 +22,13 @@ return list of contacts sorted by first_name or last_name [if blank then unsorte
 '''
 
 from operator import itemgetter
-def list_contacts(addressbook):
+def list_contacts():
     count = 0
-    for key, value in data.items():
+    print(data)
+    for key, value in data:
+        print(key)
+        print(value)
+
         count += 1
         print(f'''
         position: {value["id"]}
@@ -63,7 +68,7 @@ def add_contact():
     }
     with open('addressbook.json', 'w') as fileWrite:
         fileWrite.write(json.dumps(data))
-print("Contact added successfully")
+    print("Contact added successfully")
 
 
 
@@ -172,7 +177,7 @@ def main(json_file):
     user_input = input("Select any of the options above:\t")
     if user_input == "L":
         print("-----List contacts-----")
-        list_contacts(addressbook)
+        list_contacts()
     elif user_input == "A":
         print("-----Add contact-----")
         add_contact()

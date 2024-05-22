@@ -1,32 +1,39 @@
-{"contacts":  [
-  {
-    "id": 1,
-    "Firstname": "Danny",
-    "Lastname": "de Snoo",
-    "Emails": [
-      {"email":  "dannydesnoo1@outlook.com"},
-      {"email":  "dannydesnoo01@outlook.com"},
-      {"email":  "danny.desnoo@outlook.com"},
-      {"email":  "danny.desnoo@ddesnoo.nl"},
-      {"email":  "danny.desnoo@oakstrong.nl"}
-    ],
-    "Phonenumbers": [
-      {"phonenumber":  "0625175078"}
-    ]
-  },
-  {
-    "id": 2,
-    "Firstname": "Danny",
-    "Lastname": "de Snoo",
-    "Emails": [
-      {"email":  "dannydesnoo1@outlook.com"},
-      {"email":  "dannydesnoo01@outlook.com"},
-      {"email":  "danny.desnoo@outlook.com"},
-      {"email":  "danny.desnoo@ddesnoo.nl"},
-      {"email":  "danny.desnoo@oakstrong.nl"}
-    ],
-    "Phonenumbers": [
-      {"phonenumber":  "0625175078"}
-    ]
-  }
-]}
+[
+    {
+        "id": 1,
+        "first_name": "Clark",
+        "last_name": "Kent",
+        "emails": [
+            "clark@kent.private",
+            "c.kent@dailyplanet.work"
+        ],
+        "phone_numbers": [
+            "0881234567",
+            "0101234567"
+        ]
+    },
+    {
+        "id": 2,
+        "first_name": "Peter",
+        "last_name": "Parker",
+        "emails": [
+            "peter@parker.me",
+            "pparker@dailybugle.com"
+        ],
+        "phone_numbers": [
+            "0677345678"
+        ]
+    },
+    {
+        "id": 3,
+        "first_name": "James",
+        "last_name": "Doe",
+        "emails": [
+            "james.doe@work.mail"
+        ],
+        "phone_numbers": [
+            "0612345678",
+            "0201234567"
+        ]
+    }
+]

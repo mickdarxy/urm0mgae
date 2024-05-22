@@ -1,10 +1,12 @@
-from datetime import datetime, timedelta
+from datetime import datetime
 from math import ceil
+
 
 class ParkedCar:
     def __init__(self, license_plate: str, check_in: datetime):
         self.license_plate = license_plate
         self.check_in = check_in if check_in else datetime.now()
+
 
 class CarParkingMachine:
 
@@ -13,12 +15,11 @@ class CarParkingMachine:
         self.hourly_rate = hourly_rate
         self.parked_cars = {}
 
-
     def check_in(self, license_plate: str, check_in = None):
         # receive licenseplate as str
         #checkin as datetime object
         #if max capacity is reached it should return false w no more check ins
-        if len(self.parked_cars) <= 10:
+        if len(self.parked_cars) <= self.capacity:
             car = ParkedCar(license_plate, datetime.now())
             self.parked_cars.update({license_plate: car})
             return True
@@ -28,10 +29,11 @@ class CarParkingMachine:
         if license_plate not in self.parked_cars:
             return None
         else:
-            parking_time = datetime.now() - CarParkingMachine.check_in(self, license_plate)
+            parking_time = datetime.now() - self.parked_cars[license_plate].check_in
             parking_hours = ceil(parking_time.total_seconds() / 3600)
-            fee = min(parking_hours, 24) * CarParkingMachine.hourly_rate(self.parked_cars[license_plate])
-            return round(fee, 2)
+            fee = round(min(parking_hours, 24) * self.hourly_rate, 2)
+            print(fee)
+            return round(fee)
 
     def check_out(self, license_plate: str):
         #return get_parking_fee total fee
@@ -54,11 +56,11 @@ def main():
                 print("License plate registered successfully\n Parking active")
         elif option == 'O' or option == 'o':
             license_plate = input("Enter license plate: ")
-            if machine.check_out(license_plate):
-                print(f"License plate recognized\n Open Fee: {machine.get_parking_fee(license_plate)}")
+            parking_fee = machine.check_out(license_plate)
+            if parking_fee:
+                print(f"License plate recognized\n Open Fee: {parking_fee}")
         elif option == 'Q' or option == 'q':
             break
-
 
 
 if __name__ == "__main__":
