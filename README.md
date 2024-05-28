@@ -30,7 +30,7 @@ The file structure for this repo reflexts this in the following way
 | Sub folders (Per Week) | Description                       |
 | :-------- | :-------------------------------- |
 | `Assignment` | This folder contains the code and Description for the assignment |
-| `Problem` | This folder contains the code and Description for the problem |
+| `P` | This folder contains the code and Description for the problem |
 
 ### Code and Repo author
 
