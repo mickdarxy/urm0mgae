@@ -1,6 +1,4 @@
 
-![Hogeschool Rotterdam - Basecamp banner](https://i.
-
 # HR.Basecamp
 
 ## (EN)
