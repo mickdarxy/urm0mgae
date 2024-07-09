@@ -1,5 +1,5 @@
 
-![Hogeschool Rotterdam - Basecamp banner](https://i.ytimg.com/vi/Mh8TgtqTss4/maxresdefault.jpg)
+![Hogeschool Rotterdam - Basecamp banner](https://i.
 
 # HR.Basecamp
 
